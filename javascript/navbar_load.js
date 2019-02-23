@@ -1,7 +1,7 @@
 //TODO: find better way of detecting particular webpage
 $(document).ready(
     function() {
-        $("nav").load("../navbar.html", function() {
+        $("nav").load("navbar.html", function() {
                 switch($("title").text()) {
                     case "Home":
                         jQuery('#home').addClass('active');
