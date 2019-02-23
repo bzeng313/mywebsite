@@ -1,10 +1,8 @@
-$(document).ready(function() {
+$(document).ready(
+    function() {
         $("nav").load("navbar.html");
     }
-);
-
-
-    // function() {
+        // function() {
     //     switch($("title").text()) {
     //         case "Home":
     //             jQuery('#home').addClass('active');
@@ -20,3 +18,6 @@ $(document).ready(function() {
     //             break;
     //     }
     // }
+);
+
+
