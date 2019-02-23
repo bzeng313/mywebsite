@@ -3,7 +3,7 @@ $(document).ready(
         $("#navbar").load("navbar.html");
     }
     function() {
-        switch($("title").text()) {
+        switch(jQuery(this).attr('title')) {
             case "Home":
                 jQuery('#home').addClass('active');
                 break;
