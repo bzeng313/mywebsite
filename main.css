@@ -1,11 +1,11 @@
-#navbar {
+.navbar {
     background-color: #6090fa;
     overflow: hidden;
     margin: -10px;
 }
 
 /* Style the links inside the navigation bar */
-#navbar a {
+.navbar a {
     float: left;
     color: #f2f2f2;
     text-align: center;
@@ -15,13 +15,13 @@
 }
 
 /* Change the color of links on hover */
-#navbar a:hover {
+.navbar a:hover {
     background-color: #ddd;
     color: black;
 }
 
 /* Add a color to the active/current link */
-#navbar a.active {
+.navbar a.active {
     background-color: #282923;
     color: white;
 }
