@@ -26,5 +26,14 @@ nav a.active {
     color: white;
 }
 
+/* Add a color to the background */
+body {
+    background-color: #282923;
+    color: white;
+}
+
+.body-link {
+    color: white;
+}
 
 
