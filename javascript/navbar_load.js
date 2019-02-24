@@ -2,7 +2,7 @@
 //when loaded to github, should remove ../
 $(document).ready(
     function() {
-        $("nav").load("navbar.html", function() {
+        $("nav").load("../navbar.html", function() {
                 switch($("title").text()) {
                     case "Home":
                         jQuery('#home').addClass('active');
