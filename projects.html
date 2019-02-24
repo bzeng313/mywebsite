@@ -43,6 +43,18 @@
             To read our paper, click <a class="body-link" href="documents/cs221-final-project.pdf">here</a>.
         </p>
 
+        <h3>XY Compliance for Stanford Doggo</h3>
+        <img src="pictures/xy-doggo-demo.gif">
+        <p>
+            As a part of the Stanford Robotics Club's Extreme Mobility team, one thing I worked on was adding virtual xy compliance to our robot, Doggo. Normally, the movement of Doggo's legs would be constrained at specific theta and gamma angles, and the torques exerted by the motors to get Doggo's legs back to those angles were proportional to the leg's displacement. I became interested in adding xy compliance to Doggo's legs, so instead of theta and gamma constraints, I wanted to have Doggo's legs be constrained to specific xy axes. 
+        </p>
+        <p>
+            Turns out by multiplying a leg's xy force vector by the transpose of the Jacobian, you get the theta-gamma torque vector. Using this idea and PD control, we were able to constrain Doggo's legs to move in a single axis. The above gif shows Doggo's legs constrained at x=0.05m. Pretty cool. 
+        </p>
+        <p>
+            The bulk of my contribution can be found at this <a href="https://github.com/Nate711/ODrive/blob/position_comms/Firmware/MotorControl/controller.cpp">GitHub repo entry</a> in the function named Controller::update. Also, much thanks to the team's lead, Nathan Kau, for guiding me through this. Click <a href="https://github.com/Nate711/Doggo">here</a> to see the rest of Doggo's source code that the team is working on!
+        </p>
+
     </body>
     
 
