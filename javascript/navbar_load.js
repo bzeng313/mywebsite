@@ -1,4 +1,5 @@
 //TODO: find better way of detecting particular webpage
+//when loaded to github, should remove ../
 $(document).ready(
     function() {
         $("nav").load("navbar.html", function() {

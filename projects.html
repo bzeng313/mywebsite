@@ -11,7 +11,38 @@
 
     <body>
         <p>
-            I'll be posting detailed explanations about my past projects soon. But for now, check out my <a class="body-link" href="https://github.com/bzeng313">GitHub</a> for more!</p>
+            If you want to see all the code for these projects, check out my <a class="body-link" href="https://github.com/bzeng313">GitHub</a>!
+        </p>
+        <h3>Pokemon Creator</h3>
+        <img src="pictures/pokemongui-demo.gif">
+        <p>
+            Back in high school, I was concurrently enrolled in a local community college. I thought their Introduction to Computer Science class seemed pretty interesting, so I gave it a shot. That class was my first exposure to programming and I absolutely loved it. The project above was my final assignment for the class. Using standard Java graphics libraries, I created a Pokemon generator application. You can create any of the three original starter Pokemons along with their evolutions, as well as set their HP and nickname. The application also maintains a list of Pokemons that have been created. (Although not required, I thought it'd be pretty cool to see the actual Pokemon, so I learned to add their images as an extension for this assignment)
+        </p>
+
+        <h3>Snake</h3>
+        <img src="pictures/snake-demo.gif">
+        <p>
+            Being away from home during Thanksgiving kind of (really) sucked. While in my bed, mindlessly watching YouTube videos, I came across this <a class="body-link" href="https://www.youtube.com/watch?v=rbasThWVb-c&t=137s">video</a> titled "Creating a Snake game with Python in under 5 minutes" by the Engineer Man. Turns out you really can make a very simplistic snake game just by animating ascii text on the terminal (neat) with the curses module. The above program is a sleight variation of the Engineer Man's. I added a score keeper for mine.
+        </p>
+
+        <h3>Space Invaders</h3>
+        <img src="pictures/space-invaders-demo.gif">
+        <p>
+            Still Thanksgiving break, and still just as bored out of my mind, the above game was inspired by my snake implemenation. I thought, "Hmm, if I could make a snake game this easily, maybe I could build another classic... space invaders!". So I got to work and came up with this crude implemenation.
+        </p>
+
+        <h3>RNN Prediction Model for Tesla Stock Prices with Tweet Sentiment</h3>
+        <img src="pictures/rnn-stock-predictor-results.png">
+        <p>
+            During sophomore Fall I decided to take CS221: AI Principles and Techniques. It was a pretty interesting class, and as far as introductory AI courses go, I'd say take it if you just want to dip your toes in the water. For the final project, I partnered with my friend Zheng Lian to work on a model for predicting Tesla stock prices based on Twitter sentiment. To do this, we scraped a couple thousand tweets using Chrome's webscraper tool and took the stock data for the 2018 year from Yahoo! Finance. From this data we conducted some sentiment analysis on the tweets, fed our sentiment data and stock data into an RNN with an LSTM layer and... well, you can kind of see by the graphs above that it didn't work out so well. Which was kind of expected. 
+        </p>
+        <p>
+            Our sentiment analysis on the tweets was done via a pretrained model (using Textblob), so any sentiment data we got from that probably wouldn't have been accurate. From our paper: "Textblob was most likely trained on text with sentiment labeled in terms of moods like happy, sad, or neutral. However, the sentiment of a sentence in terms of stock trends must be classified in terms of its effect on the market. For instance, the tweet 'Tesla goes bankrupt' implies a neutral sentiment, as this is a non-opinionated statement. However, the sentiment in terms of Tesla's stock trend should be negative. If more time and resources are available, we would like to label our own data to train a sentiment analysis model that better represents the sentiment and subjectivity elicited in the tweets in terms of stock market movement." But alas, we didn't have much time to make our own "stock sentiment" classifier, so we just went with the simplest tools we had. In the end, our stock predictor didn't really fair that much more well than linear regression, but hey, it was a great learning experience, and I'm glad I learned how to actually implement a neural network. 
+        </p>
+        <p>
+            To read our paper, click <a class="body-link" href="documents/cs221-final-project.pdf">here</a>.
+        </p>
+
     </body>
     
 
